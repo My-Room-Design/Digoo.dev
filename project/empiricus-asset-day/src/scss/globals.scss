@@ -1,0 +1,14 @@
+$primary: #1d3557;
+$secondary: #457b9d;
+$font-family-base: 'Roboto', sans-serif;
+$font-size-base: 16px;
+
+$custom-spacing: 1.5rem;
+
+.text-description{
+    font-size: small;
+}
+
+body{
+    background-color: $primary;
+}

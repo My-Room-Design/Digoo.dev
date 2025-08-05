@@ -1,0 +1,1298 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>ASSET DAY</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <script src=https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js></script>
+    <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css
+        integrity=sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e crossorigin=anonymous>
+    <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css>
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.empiricus.com.br/favicon.ico">
+    <link rel="stylesheet" href="./css-scss/main.css">
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+    </header>
+
+    <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css
+        integrity=sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e crossorigin=anonymous>
+
+    <!-- <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        #asset-day {
+            font-family: "Poppins", sans-serif;
+            font-style: normal;
+            font-size: .9rem;
+        }
+
+        #asset-day .topo .intro p {
+            color: #dbdbdb;
+            font-weight: 300;
+            font-size: 1.2rem;
+        }
+
+        #asset-day .topo {
+            background: linear-gradient(90deg, rgba(4, 24, 34, 1) 35%, rgba(8, 46, 65, 1) 100%);
+        }
+
+        .titulo {
+            color: #2FA8E7;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .data {
+            background-color: #2FA8E7;
+        }
+
+        .linha-data {
+            border: .3rem solid #2FA8E7;
+            opacity: 1;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 1rem;
+
+        }
+
+        .horario {
+            font-size: medium;
+            font-weight: 600;
+            font-stretch: expanded !important;
+            white-space: nowrap;
+            display: block;
+        }
+
+        .nav-link {
+            color: #dbdbdb !important;
+        }
+
+        .nav-pills .nav-link.active {
+            background-color: #2fa7e71e;
+        }
+
+        .text-description {
+            margin-top: .6rem;
+            font-size: smaller;
+            text-align: start;
+            font-size: .8rem;
+            font-weight: 200;
+        }
+
+        .card-palestrante {
+            background: rgba(255, 255, 255, 0.062);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(6.3px);
+            -webkit-backdrop-filter: blur(6.3px);
+            border: 1px solid #2FA8E7;
+            /* From https://css.glass */
+            color: #dbdbdb;
+            padding: .3rem;
+        }
+
+        .bg-lightblue {
+            background: rgba(255, 255, 255, 0.062);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(6.3px);
+            -webkit-backdrop-filter: blur(6.3px);
+            border: 1px solid #2FA8E7;
+            border-radius: .4rem;
+        }
+
+        .tab-pane {
+            opacity: 0;
+            transition: opacity 200ms ease-in-out;
+            /* Transição de fade in e fade out */
+        }
+
+        .tab-pane.active.show {
+            opacity: 1;
+        }
+
+        .progress {
+            background-color: #2fa7e70e;
+            height: 5px;
+        }
+
+        .progress-bar {
+            width: 0;
+            height: 5px;
+            background-color: #2FA8E7;
+            transition: width 5s linear;
+            border-radius: 3rem;
+        }
+
+        #agenda .card-title {
+            color: #2FA8E7;
+        }
+
+        .nav-link.active .progress-bar {
+            width: 100%;
+        }
+
+        .disclaimer {
+            width: 100%;
+            background-color: #000;
+            border-bottom: solid 1px #edd35b;
+            text-align: center;
+        }
+
+        .disclaimer_content {
+            font-size: 14px;
+            font-weight: 200;
+            color: white;
+            padding-top: 1rem;
+        }
+
+        .btn-cian {
+            background: linear-gradient(45deg, #51f5e8 0%, #44b5ac 100%);
+            color: #222;
+            border: none;
+        }
+
+        .btn-cian:hover {
+            background: linear-gradient(45deg, #347a75 0%, #44b5ac 100%);
+            color: #222;
+            border: none;
+        }
+
+        .navBar {
+            display: flex;
+            /* Usa flexbox para layout */
+            align-items: center;
+            /* Alinha itens verticalmente no centro */
+            justify-content: center;
+            /* Alinha itens horizontalmente no centro */
+            box-sizing: border-box;
+            position: fixed;
+            z-index: 6;
+            top: -50px;
+            /* Inicialmente oculta */
+            width: 100%;
+            height: 30px;
+            background-color: #000;
+            border-bottom: solid 1px #edd35b;
+            box-shadow: 0 0 15px 5px rgba(0, 0, 0, .5);
+            transition: all .2s ease-in-out;
+        }
+
+        .navBar .container {
+            display: flex;
+            justify-content: center;
+            /* Centraliza o conteúdo dentro do container */
+            width: 100%;
+        }
+
+        .navBar_logo {
+            display: block;
+            overflow: hidden;
+            width: 92px;
+            height: 24px;
+            background-image: url(https://sl.empiricus.com.br/s/grl04t-gpt/images/sprite-layout.svg);
+            background-size: 271px 225px;
+            background-position: left top;
+            background-repeat: no-repeat;
+            transition: all .5s ease;
+        }
+
+        @media (min-width: 992px) {
+            .navbar .container {
+                padding-left: 20px;
+                max-width: 1200px;
+            }
+        }
+
+        .navBar.visible {
+            top: 0;
+            /* Mostra a barra de navegação quando a classe 'visible' é adicionada */
+        }
+
+        .titulo-texto {
+            margin-top: 2rem;
+        }
+
+        .titulo-texto::after {
+            margin-top: .7rem;
+            content: '';
+            display: block;
+            background-color: #000;
+            width: 100px;
+            height: 2px;
+        }
+
+        .bg-missao {
+            background-image: url(../assets/img/bg.svg);
+            background-size: cover;
+
+        }
+    </style> -->
+
+
+    <main id="asset-day">
+
+        <div class="disclaimer">
+            <div class="disclaimer_content">
+                <p>Investimentos levam riscos e retornos passados não garantem retornos futuros</p>
+            </div>
+        </div>
+
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top navBar">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <div class="navBar_logo"></div>
+                </a>
+            </div>
+        </nav>
+
+
+
+        <section class="topo">
+            <div class="container-fluid">
+
+                <div class="intro container text-center pb-3">
+                    <picture>
+                        <source srcset="../assets/img/title.png" type="image/svg+xml">
+                        <img src="../assets/img/title.png" width="350" height="auto" class="img-fluid logo" alt="...">
+                    </picture>
+
+                    <p>
+                        O <strong>Empiricus Asset Day</strong> é uma manhã dedicada a discussões profundas e relevantes
+                        sobre o <strong>mercado
+                            financeiro</strong>, com foco em previdência, investimentos internacionais e cenários
+                        políticos globais.
+                        Será uma oportunidade única de networking e aprendizado, reunindo especialistas de destaque no
+                        setor.
+                    </p>
+                </div>
+
+
+                <div class="agenda container text-center px-5">
+
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-auto">
+                            <h2 class="titulo">Agenda</h2>
+                        </div>
+                        <div class="col-auto col-md-2 data">
+                            <div class="row justify-content-center flex-column">
+                                <div class="col-auto"><strong class="fs-3">05</strong></div>
+                                <div class="col-auto">Setembro</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <hr class="linha-data">
+                    </div>
+
+                    <div class="row py-3 justify-content-between">
+
+                        <div class="col-xl-5 mb-4 g-3 order-2 ">
+                            <div class="nav flex-column nav-pills me-3">
+
+
+
+                                <button class="nav-link d-flex align-items-center tab-button"
+                                    id="v-pills-boasvindas-tab" data-bs-target="#v-pills-boasvindas"
+                                    data-bs-toggle="pill" type="button" role="tab" aria-selected="false" tabindex="-1">
+                                    <i class="fas fa-user-friends icon me-2 px-2"></i>
+
+                                    <a href="#" class="text-decoration-none text-light">
+
+                                        <div class="text-start w-100">
+                                            <div class="row justify-content-between align-items-center g-2 ">
+                                                <div class="col-auto horario">08h30-09h00
+                                                    </stron>
+                                                </div>
+                                                <div class="col-12 col-sm-8">
+                                                    <p class="text-start mb-0" style="font-weight: 200;">Credenciamento
+                                                        e
+                                                        Boas-vindas</p>
+                                                </div>
+
+                                                <div class="progress w-50">
+                                                    <div class="progress-bar"></div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                    </a>
+
+                                </button>
+
+                                <hr style="border: 1px solid#dbdbdb;">
+
+                                <button class="nav-link d-flex align-items-center tab-button active"
+                                    data-bs-toggle="pill" data-bs-target="#v-pills-limites" type="button" role="tab"
+                                    aria-controls="v-pills-limites" aria-selected="false" tabindex="-1">
+                                    <i class="fas fa-shopping-cart icon me-2 px-2"></i>
+
+                                    <a href="#" class="text-decoration-none text-light">
+
+                                        <div class="text-start w-100">
+                                            <div class="row justify-content-between align-items-center g-2">
+                                                <div class="col-auto horario">09h00-10h00
+                                                    </stron>
+                                                </div>
+                                                <div class="col-12 col-sm-8">
+                                                    <div class="row flex-column">
+                                                        <div class="col mb-3">
+                                                            <strong class="h5 text-uppercase fw-bold">Painel 1</strong>
+                                                            <p class="text-start mb-0" style="font-weight: 200;">Painel
+                                                                |
+                                                                Diferencial seu portfólio de Previcência</p>
+                                                        </div>
+                                                        <div class="col">
+                                                            <strong class="h6 text-uppercase">Palestrante:</strong>
+                                                            <p class="text-start mb-0" style="font-weight: 200;">Gabriel
+                                                                Escabin(BTG Pactual) e Bruno Mérola, (Empirucus
+                                                                Research)
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="progress w-100">
+                                                    <div class="progress-bar"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </a>
+
+                                </button>
+
+                                <hr style="border: 1px solid#dbdbdb;">
+
+                                <button class="nav-link d-flex align-items-center tab-button" id="v-pills-aprovacao-tab"
+                                    data-bs-toggle="pill" data-bs-target="#v-pills-aprovacao" type="button" role="tab"
+                                    aria-controls="v-pills-aprovacao" aria-selected="false" tabindex="-1">
+                                    <i class="fas fa-list-check icon me-2 px-2"></i>
+
+
+                                    <div class="text-start w-100">
+                                        <div class="row justify-content-between align-items-center g-2 ">
+                                            <div class="col-auto horario">10h00-10h30
+                                                </stron>
+                                            </div>
+                                            <div class="col-12 col-sm-8">
+                                                <p class="text-start mb-0" style="font-weight: 200;">Coffe Break</p>
+                                            </div>
+
+                                            <div class="progress w-50">
+                                                <div class="progress-bar"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </button>
+
+                                <hr style="border: 1px solid#dbdbdb;">
+
+                                <button class="nav-link d-flex align-items-center tab-button" id="v-pills-painel2-tab"
+                                    data-bs-toggle="pill" data-bs-target="#v-pills-painel2" type="button" role="tab"
+                                    aria-controls="v-pills-painel2" aria-selected="true">
+                                    <i class="fas fa-chart-line icon me-2 px-2"></i>
+
+                                    <a href="#" class="text-decoration-none text-light">
+
+                                        <div class="text-start w-100">
+                                            <div class="row justify-content-between align-items-center g-2">
+                                                <div class="col-auto horario">10h30-11h30
+                                                    </stron>
+                                                </div>
+                                                <div class="col-12 col-sm-8">
+                                                    <div class="row flex-column">
+                                                        <div class="col mb-3">
+                                                            <strong class="h5 text-uppercase fw-bold">Painel 2</strong>
+                                                            <p class="text-start mb-0" style="font-weight: 200;">
+                                                                Eleições
+                                                                Presidencias dos EUA e seus possíveis cenários</p>
+                                                        </div>
+                                                        <div class="col">
+                                                            <strong class="h6 text-uppercase">Palestrante:</strong>
+                                                            <p class="text-start mb-0" style="font-weight: 200;">Charles
+                                                                Myers (Signum Global Advisors)
+                                                            </p>
+                                                        </div>
+                                                        <div class="col">
+                                                            <strong class="h6 text-uppercase">Moderador:</strong>
+                                                            <p class="text-start mb-0" style="font-weight: 200;">Alvaro
+                                                                Maia
+                                                                (StoneX)
+                                                            </p>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="progress w-100">
+                                                    <div class="progress-bar"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </a>
+
+                                </button>
+
+                                <hr style="border: 1px solid#dbdbdb;">
+
+                                <button class="nav-link d-flex align-items-center tab-button" id="v-pills-painel3-tab"
+                                    data-bs-toggle="pill" data-bs-target="#v-pills-painel3" type="button" role="tab"
+                                    aria-controls="v-pills-painel3" aria-selected="false" tabindex="-1">
+                                    <i class="fas fa-shopping-cart icon me-2 px-2"></i>
+
+                                    <a href="#" class="text-decoration-none text-light">
+
+                                        <div class="text-start w-100">
+                                            <div class="row justify-content-between align-items-center g-2">
+                                                <div class="col-auto horario">11h30-12h30
+                                                    </stron>
+                                                </div>
+                                                <div class="col-12 col-sm-8">
+                                                    <div class="row flex-column">
+                                                        <div class="col mb-3">
+                                                            <strong class="h5 text-uppercase fw-bold">Painel 3</strong>
+                                                            <p class="text-start mb-0" style="font-weight: 200;">
+                                                                Fortalecimento de Carteira com Investimentos
+                                                                INternacionais
+                                                            </p>
+                                                        </div>
+                                                        <div class="col">
+                                                            <strong class="h6 text-uppercase">Palestrante:</strong>
+                                                            <p class="text-start mb-0" style="font-weight: 200;">Eric
+                                                                Hatisuka(Mirabaud) e João Piccioni(Empirucus Gestão)
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="progress w-100">
+                                                    <div class="progress-bar"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </a>
+
+                                </button>
+
+                                <hr style="border: 1px solid#dbdbdb;">
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="col-xl-7 order-1" style="min-height: 500px;" id="agenda">
+                            <div class="tab-content" id="v-pills-tabContent">
+                                <div class="tab-pane fade" id="v-pills-boasvindas" role="tabpanel"
+                                    aria-labelledby="v-pills-boasvindas-tab">
+                                    <div class="text-light bg-lightblue p-5">
+                                        <i class="bi bi-emoji-laughing fs-1"></i>
+                                        <p>Boas-Vindas</p>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade active show text-start" id="v-pills-limites" role="tabpanel"
+                                    aria-labelledby="v-pills-limites-tab">
+
+                                    <div class="row justify-content-center align-items-top g-2">
+                                        <div class="col-12 col-sm-6">
+
+                                            <div class="card card-palestrante">
+                                                <img src="../assets/img/gabriel-escabin.jpg" class="card-img-top"
+                                                    alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">GABRIEL ESCABIN</h5>
+                                                    <p class="card-subtitle">BTG Pactual</p>
+                                                    <p class="card-text text-description">Diretor Estatutário Técnico,
+                                                        de
+                                                        Registro de Operações e de Open Insurance da BTG Pactual Vida e
+                                                        Previdência; Head Comercial e de Produtos Seguro de Vida e
+                                                        Previdência;
+                                                        Membro das Comissões de Investimentos e de Sobrevivência da
+                                                        Fenaprevi;
+                                                        Porta-voz para assuntos de Seguro de Vida e Previdência.</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-12 col-sm-6">
+
+                                            <div class="card card-palestrante">
+                                                <img src="../assets/img/bruno-merola.jpg" class="card-img-top"
+                                                    alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">BRUNO MÉROLA</h5>
+                                                    <p class="card-subtitle">Empiricus Research</p>
+                                                    <p class="card-text text-description">Engenheiro com especialização
+                                                        em finanças, passou quase cinco anos no Itaú. Há dois, fazia
+                                                        recomendações de investimentos para os Ultra High-Net-Worth
+                                                        Individuals (UHNWI) - em bom português: os clientes mais ricos e
+                                                        exigentes dos private banks. Atualmente, comanda a série Os
+                                                        Melhores Fundos de Investimento.</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-12 col-sm-6">
+
+                                            <div class="card card-palestrante">
+                                                <img src="../assets/img/mariella.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">MARIELLA GONTIJO</h5>
+                                                    <p class="card-subtitle">Vos Investimentos</p>
+                                                    <p class="card-text text-description">Fundadora da Vos Investimentos
+                                                        e especialista em Private Banking com ampla experiência no
+                                                        segmento de advisory para famílias empreendedoras, tanto no
+                                                        Brasil quanto na Suíça. Com uma carreira marcada por seu
+                                                        comprometimento em perpetuar valor e gerar impacto nos negócios
+                                                        dos clientes que atendeu em renomadas instituições globais,
+                                                        Mariella também se destaca como uma entusiasta do tema
+                                                        diversidade.</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+                                <div class="tab-pane fade" id="v-pills-aprovacao" role="tabpanel"
+                                    aria-labelledby="v-pills-aprovacao-tab">
+                                    <div class="text-light bg-lightblue p-5">
+                                        <i class="bi bi-cup-hot fs-1"></i>
+                                        <p>Coffe Break</p>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="v-pills-painel2" role="tabpanel"
+                                    aria-labelledby="v-pills-painel2-tab">
+
+                                    <div class="row justify-content-center align-items-top g-2">
+                                        <div class="col-12 col-sm-6">
+
+                                            <div class="card card-palestrante">
+                                                <img src="../assets/img/charles-myers.jpg" class="card-img-top"
+                                                    alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">CHARLES MYERS</h5>
+                                                    <p class="card-subtitle">Signum Global Advisors</p>
+                                                    <p class="card-text text-description">Presidente e Fundador da
+                                                        Signum Global Advisors, possui mais de 25 anos de experiência
+                                                        política e eleitoral nos EUA, atuando como consultor de
+                                                        candidatos em campanhas para Presidência, Senado, Câmara dos
+                                                        Representantes e Governos Estaduais, incluindo Hillary Clinton
+                                                        para Presidente em 2016 e Joe Biden para Presidente em 2020.
+                                                        Além disso, tem 30 anos de experiência em mercados financeiros
+                                                        globais.</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="tab-pane fade" id="v-pills-painel3" role="tabpanel"
+                                    aria-labelledby="v-pills-painel3-tab">
+
+                                    <div class="row justify-content-center align-items-top g-2">
+                                        <div class="col-12 col-sm-6">
+
+                                            <div class="card card-palestrante">
+                                                <img src="../assets/img/eric-hatisuka.jpg" class="card-img-top"
+                                                    alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">ERIC HATISUKA</h5>
+                                                    <p class="card-subtitle">Mirabaud</p>
+                                                    <p class="card-text text-description">CIO do Mirabaud Family Office
+                                                        (Brasil) e head do Comitê de Investimentos local, Eric tem mais
+                                                        de 20 anos de experiência no mercado financeiro, com foco em
+                                                        gestão de fundos e carteiras, alocação de ativos e análise
+                                                        macroeconômica.<br> Antes de ingressar no Mirabaud em 2021, foi
+                                                        CIO na Rosenberg Investimentos e na Rafter Investimentos, tendo
+                                                        em seu histórico passagens pelas instituições Porto Seguro
+                                                        Investimentos, Santander Brasil e Itaú Asset Management. Eric é
+                                                        bacharel em Engenharia Química pela Unicamp, mestre em Economia
+                                                        pela FGV/SP, certificado CGA pela Anbima e administrador de
+                                                        recursos autorizado pela CVM desde 2013.</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-12 col-sm-6">
+
+                                            <div class="card card-palestrante">
+                                                <img src="../assets/img/joao-piccioni.jpg" class="card-img-top"
+                                                    alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">JOÃO PICCIONI</h5>
+                                                    <p class="card-subtitle">Empiricus Gestão</p>
+                                                    <p class="card-text text-description">CIO da Empiricus Gestão.
+                                                        Graduado em Engenharia e Administração de Empresas pela FEI e
+                                                        FGV-EAESP, respectivamente, e mestre em Finanças pela FGV-EESP.
+                                                        Possui mais de 15 anos de experiência em análise de
+                                                        investimentos e gestão de recursos. Certificações CNPI (Apimec),
+                                                        CGA (Certificado de Gestores Anbima) e CQF (Certificate of
+                                                        Quantitative Finance).</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta text-center flex-column py-4">
+                    <span class="fs-5 text-light">E você, como nosso convidado especial, receberá um presente
+                        exclusivo!</span>
+
+                    <br>
+
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-lg btn-cian mt-4 " type="button">QUERO ME CADASTRAR</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="container py-4">
+            <div class="text-center">
+                <span class="fs-5 mb-5">
+                    Confira abaixo, a performance e a abordagem de alguns dos nossos principais fundos de investimento:
+
+                </span>
+            </div>
+
+            <div class="item-1">
+
+                <div class="row justify-content-between">
+                    <div class="col">
+                        <h2 class="titulo-texto text-break">DIGITAL CRYPTO FIM</h2>
+                    </div>
+                    <div class="col-auto mt-4">
+                        <h3>Investidor Qualificado</h3>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center align-items-center g-2">
+                    <div class="col-12 col-md-6">
+                        <picture>
+                            <source srcset="../assets/img/img1.jpg" type="image/svg+xml">
+                            <img src="../assets/img/img1.png" width="500" height="auto" class="img-fluid" alt="...">
+                        </picture>
+                    </div>
+                    <div class="col-12 col-md-6 text-start">
+                        <p>Nosso Fundo Digital Crypto FIM foi projetado para capitalizar o crescimento explosivo das
+                            criptomoedas, o maior vetor para transformar o sistema financeiro global e gerar valor
+                            econômico sem precedentes. As criptomoedas não são apenas uma tendência: são a próxima
+                            grande revolução financeira.</p>
+                        <ul>
+                            <li>Gestão Especializada: Nosso fundo é gerido por uma equipe de especialistas com profundo
+                                conhecimento do mercado cripto e um histórico comprovado em investimentos em blockchain.
+                            </li>
+                            <li>Portfólio Diversificado: Investimos em um portfólio diversificado de criptomoedas e
+                                projetos blockchain, minimizando riscos e maximizando retornos potenciais.</li>
+                            <li>Visão Estratégica: Focamos no crescimento a longo prazo e na adaptação às inovações e
+                                tendências tecnológicas, garantindo que nossos investimentos estejam alinhados com o
+                                futuro digital.</li>
+                        </ul>
+
+                        <picture>
+                            <source srcset="../assets/img/img2.jpg" type="image/svg+xml">
+                            <img src="../assets/img/img2.png" width="500" height="auto" class="img-fluid d-block"
+                                alt="...">
+                        </picture>
+
+                        <footer class="blockquote-footer mt-4">Fonte: dados Empiricus Gestão | Quantum*</footer>
+
+                        <hr>
+                    </div>
+                    <span>*O Fundo Empiricus Digital Crypto FIM utiliza como referência os resultados históricos do
+                        Fundo Empiricus Criptomoedas FICFIM, buscando replicar a estratégia e a filosofia de
+                        investimento nele empregadas. No entanto, é importante destacar que o desempenho passado não
+                        garante resultados futuros, e o novo fundo está sujeito às mesmas condições de mercado, mas com
+                        possíveis variações devido a mudanças em fatores externos e na gestão.<br> Fundos de
+                        investimento não contam com garantia do administrador do fundo, do gestor da carteira, de
+                        qualquer mecanismo de seguro ou, ainda, do fundo garantidor de créditos – FGC. <br> A
+                        rentabilidade obtida no passado não representa garantia de rentabilidade futura. É recomendada a
+                        leitura cuidadosa do prospecto e regulamento do fundo de investimento pelo investidor ao aplicar
+                        seus recursos. Para avaliação da performance do fundo de investimento é recomendável uma análise
+                        de, no mínimo, 12 (doze) meses.</span>
+                </div>
+
+                <hr style="border: 1px solid #000;" class="my-4">
+
+            </div>
+
+            <div class="item-2">
+
+                <div class="row justify-content-between">
+                    <div class="col">
+                        <h2 class="titulo-texto">TECH SELECT</h2>
+                    </div>
+                    <div class="col-auto mt-4">
+                        <h3>Investidor Geral</h3>
+                    </div>
+                </div>
+
+
+
+                <div class="row justify-content-center align-items-center g-2">
+                    <div class="col-12 col-md-6">
+                        <picture>
+                            <source srcset="../assets/img/img3.jpg" type="image/svg+xml">
+                            <img src="../assets/img/img3.png" width="500" height="auto" class="img-fluid" alt="...">
+                        </picture>
+                    </div>
+                    <div class="col-12 col-md-6 text-start">
+                        <p>Transforme seu futuro Financeiro com o Tech Select.</p>
+                        <br>
+
+                        <p>Em um mundo onde a tecnologia é o motor que impulsiona a transformação digital, o Tech Select
+                            FICFIA Access oferece a oportunidade de investir com um clique em empresas que estão
+                            moldando o futuro da tecnologia, como Apple, Microsoft e NVIDIA.</p>
+                        <br>
+
+                        <p>Com foco em inteligência artificial e outras tecnologias emergentes, o Tech Select é a chave
+                            para desbloquear retornos superiores e participar de um futuro mais conectado e eficiente.
+                        </p>
+
+
+                        <ul>
+                            <li>Desempenho Consistente do setor de Tecnologia: Beneficie-se de um histórico comprovado
+                                de desempenho superior do setor, com o Nasdaq superando consistentemente o S&P 500,
+                                impulsionado pelas Big Techs.
+                            </li>
+
+                            <li>Exposição a Empresas Líderes: Invista em gigantes da tecnologia como Apple, Microsoft, e
+                                NVIDIA, empresas que estão definindo o padrão de inovação e crescimento no setor.</li>
+
+                            <li>Potencial de Crescimento Exponencial: A inteligência artificial é comparada à internet
+                                em termos de impacto transformador, oferecendo oportunidades sem precedentes para
+                                aumentar a lucratividade e escalabilidade dos negócios.</li>
+                        </ul>
+
+                        <picture>
+                            <source srcset="../assets/img/img4.jpg" type="image/svg+xml">
+                            <img src="../assets/img/img4.jpg" width="500" height="auto" class="img-fluid d-block"
+                                alt="...">
+                        </picture>
+
+                        <footer class="blockquote-footer mt-4">Fonte: dados Empiricus Gestão | Quantum*</footer>
+
+                        <hr>
+                    </div>
+                    <span>*O Fundo Empiricus Tech Select FICFIA Access utiliza como referência os resultados históricos
+                        do Fundo Empiricus Tech Select FIA BDR Nível I, buscando replicar a estratégia e a filosofia de
+                        investimento nele empregadas. No entanto, é importante destacar que o desempenho passado não
+                        garante resultados futuros, e o novo fundo está sujeito às mesmas condições de mercado, mas com
+                        possíveis variações devido a mudanças em fatores externos e na gestão. Fundos de investimento
+                        não contam com garantia do administrador do fundo, do gestor da carteira, de qualquer mecanismo
+                        de seguro ou, ainda, do fundo garantidor de créditos – FGC. A rentabilidade obtida no passado
+                        não representa garantia de rentabilidade futura. É recomendada a leitura cuidadosa do prospecto
+                        e regulamento do fundo de investimento pelo investidor ao aplicar seus recursos. Para avaliação
+                        da performance do fundo de investimento é recomendável uma análise de, no mínimo, 12 (doze)
+                        meses.</span>
+                </div>
+
+                <hr>
+            </div>
+
+            <div class="item-3">
+
+                <div class="row justify-content-between">
+                    <div class="col">
+                        <h2 class="titulo-texto">Global Real Return</h2>
+                    </div>
+                    <div class="col-auto mt-4">
+                        <h3>Investidor Qualificado</h3>
+                    </div>
+                </div>
+
+
+
+                <div class="row justify-content-center align-items-center g-2">
+                    <div class="col-12 col-md-6">
+                        <picture>
+                            <source srcset="../assets/img/img4.jpg" type="image/svg+xml">
+                            <img src="../assets/img/img4.jpg" width="500" height="auto" class="img-fluid d-block"
+                                alt="...">
+                        </picture>
+
+                        <footer class="blockquote-footer mt-4">Fonte: dados Empiricus Gestão | Quantum*</footer>
+                    </div>
+                    <div class="col-12 col-md-6 text-start">
+                        <p>Proteja e potencialize seu patrimônio enquanto aproveita o crescimento global.</p>
+                        <br>
+
+                        <p>É com grande satisfação que apresentamos o Empiricus Global Real Return, um fundo de
+                            previdência que alia proteção robusta contra a inflação com a possibilidade de crescimento
+                            significativo.</p>
+                        <br>
+
+                        <p>Por que o Empiricus Global Real Return é a escolha certa para você?
+                        </p>
+
+
+                        <ul>
+                            <li>Segurança e Previsibilidade: A maior parcela do fundo é composta por título do tesouro
+                                IPCA de longo prazo que garantem rentabilidade real acima da inflação. Em outras
+                                palavras, seu capital não apenas é protegido contra a perda de poder de compra, como
+                                também cresce de forma segura.
+                            </li>
+
+                            <li>Crescimento Global: Além da segurança dos títulos IPCA, o fundo inclui a exposição ao
+                                dólar por meio do world11, gerido pela Investo, que oferece exposição a mais de 9.000
+                                empresas líderes em todo o mundo. Isso significa que você participa do crescimento dos
+                                mercados globais, com foco nos Estados Unidos, o maior e mais desenvolvido mercado de
+                                ações do mundo.</li>
+
+                            <li>Baixos Custos Operacionais: Nosso fundo foi estruturado para maximizar seus ganhos
+                                líquidos, com custos operacionais reduzidos. Essa eficiência é fundamental para seu
+                                planejamento financeiro de longo prazo.</li>
+
+                            <li>Resultados Consistentes: Os números recentes comprovam a solidez e consistência do
+                                Empiricus Global Real Return.</li>
+                        </ul>
+
+
+
+                        <hr>
+                    </div>
+                    <span>*Fundos de investimento não contam com garantia do administrador do fundo, do gestor da
+                        carteira, de qualquer mecanismo de seguro ou, ainda, do fundo garantidor de créditos – FGC. A
+                        rentabilidade obtida no passado não representa garantia de rentabilidade futura. É recomendada a
+                        leitura cuidadosa do prospecto e regulamento do fundo de investimento pelo investidor ao aplicar
+                        seus recursos. Para avaliação da performance do fundo de investimento é recomendável uma análise
+                        de, no mínimo, 12 (doze) meses.</span>
+                </div>
+
+                <hr>
+            </div>
+
+            <div class="cta text-center flex-column py-4">
+                <span class="fs-5">Quer saber mais? Entre em contato com nosso time</span>
+
+                <br>
+
+                <a href="mailto:ri@empiricus.com.br" class="text-light text-decoration-none">
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-lg btn-cian my-4" type="button">CLIQUE AQUI</button>
+                    </div>
+                </a>
+
+                <br>
+                <small>As informações contidas nesta apresentação não podem ser consideradas como única fonte de
+                    informações
+                    no processo decisório do investidor, que, antes de tomar qualquer decisão, deverá realizar uma
+                    avaliação minuciosa do produto e respectivos riscos, face aos seus objetivos pessoais e ao seu
+                    perfil de risco ("Suitability"). RENTABILIDADE PASSADA NÃO REPRESENTA GARANTIA DE RENTABILIDADE
+                    FUTURA. Assim, não é possível prever o desempenho futuro de um investimento a partir da variação de
+                    seu valor de mercado no passado. A RENTABILIDADE DIVULGADA NÃO É LÍQUIDA DE IMPOSTOS. O BTG não
+                    assume que os investidores vão obter lucros, nem se responsabiliza pelas perdas. FUNDOS DE
+                    INVESTIMENTO NÃO CONTAM COM GARANTIA DO ADMINISTRADOR, DO GESTOR, DE QUALQUER MECANISMO DE SEGURO OU
+                    FUNDO GARANTIDOR DE CRÉDITO – FGC. LEIA O PROSPECTO E O REGULAMENTO ANTES DE INVESTIR.</small>
+            </div>
+        </section>
+
+        <section class="container-fluid bg-missao">
+
+            <div class="container py-4">
+                <div class="row justify-content-center align-items-center g-2">
+                    <div class="col-auto">
+                        <picture>
+                            <source srcset="../assets/img/gestao.svg" type="image/svg+xml">
+                            <img src="../assets/img/gestao.svg" width="350" height="auto" class="img-fluid" alt="...">
+                        </picture>
+                    </div>
+                    <div class="col"></div>
+                </div>
+
+                <div class="row text-center">
+                    <div class="col">
+                        <h2 class="text-light fs-1 mt-5">Nossa missão</h2>
+                    </div>
+                    <p class="fs-4 fw-lighter text-light">Trazer soluções inovadoras em mercados ainda não explorados
+                        pelos fundos de investimentos tradicionais.</p>
+                </div>
+
+                <div class="row justify-content-center align-items-center mt-3 g-4 pb-3">
+                    <div class="col-auto">
+                        <a
+                            href="https://gestao.empiricus.com.br/fundo-de-investimento/empiricus-criptomoedas-ficfim-ie/?_gl=1*8rnodu*_gcl_au*MjAxNjgzMDM4MS4xNzI0NzA2NDI2*_ga*ODU0MTY2OTQyLjE3MjQ3MDY0Mjc.*_ga_ZHCTZZSZRZ*MTcyNTA2OTY1MS44LjEuMTcyNTA3MDY4MS42MC4wLjA.">
+                            <picture>
+                                <source srcset="../assets/img/botao1.png" type="image/svg+xml" />
+                                <img src="../assets/img/botao1.png" width="200" class="img-fluid" alt="image desc" />
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="col-auto">
+                        <a
+                            href="https://gestao.empiricus.com.br/fundo-de-investimento/empiricus-tech-select-fia-bdr-nivel-i/?_gl=1*b1iyig*_gcl_au*MjAxNjgzMDM4MS4xNzI0NzA2NDI2*_ga*ODU0MTY2OTQyLjE3MjQ3MDY0Mjc.*_ga_ZHCTZZSZRZ*MTcyNTA2OTY1MS44LjEuMTcyNTA3MTI0NC42MC4wLjA.">
+                            <picture>
+                                <source srcset="../assets/img/botao2.png" type="image/svg+xml" />
+                                <img src="../assets/img/botao2.png" width="200" class="img-fluid" alt="image desc" />
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="col-auto">
+                        <a
+                            href="https://gestao.empiricus.com.br/previdencia/empiricus-gl-real-return-prev-fi-mult/?_gl=1*cbdtn*_gcl_au*MjAxNjgzMDM4MS4xNzI0NzA2NDI2*_ga*ODU0MTY2OTQyLjE3MjQ3MDY0Mjc.*_ga_ZHCTZZSZRZ*MTcyNTA2OTY1MS44LjEuMTcyNTA3MjkyMy40Ny4wLjA.">
+                            <picture>
+                                <source srcset="../assets/img/botao3.png" type="image/svg+xml" />
+                                <img src="../assets/img/botao3.png" width="200" class="img-fluid" alt="image desc" />
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="container-fluid text-center">
+            <h2 class="text-light fs-2 mt-5 text-dark ">CONHEÇA NOSSA HISTÓRIA</h2>
+
+            <picture>
+                <source srcset="../assets/img/graphic.png" type="image/svg+xml" />
+                <img src="../assets/img/graphic.png" class="img-fluid mt-5" alt="image desc" />
+            </picture>
+
+        </section>
+
+        <section class="bg-light py-3 py-md-5 py-xl-8">
+            <div class="container">
+                <div class="row gy-3 gy-md-5 gy-lg-0 align-items-center">
+                    <div class="col-12 text-center">
+                        <!-- <h3 class="fs-6 text-secondary mb-2 mb-xl-3">The Finest Design Agency</h3> -->
+                        <h2 class="display-6 mb-5 text-divider">Há seis anos revolucionando o mercado de
+                            investimentos.</h2>
+                        <!-- <p class="mb-4 mb-xl-5">We're one of the finest web design agencies that team up with startups, agencies, and founders to design digital products and websites.</p> -->
+                    </div>
+                    <div class="col-12 ">
+                        <div class="row justify-content-xl-end">
+                            <div class="col-12">
+                                <div class="row gy-3 gy-md-4 row-cols-1 row-cols-sm-2 row-cols-lg-3">
+                                    <!-- Card 1 -->
+                                    <div class="col">
+                                        <div class="card border-0 border-bottom border-primary shadow-sm">
+                                            <div class="card-body text-center p-4 p-xxl-5">
+                                                <h3 class="display-3 mb-2">R$ 6 bi</h3>
+                                                <p class="fs-5 mb-0 text-secondary">AuM</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Card 2 -->
+                                    <div class="col">
+                                        <div class="card border-0 border-bottom border-primary shadow-sm">
+                                            <div class="card-body text-center p-4 p-xxl-5">
+                                                <h3 class="display-3 mb-2">+195k</h3>
+                                                <p class="fs-5 mb-0 text-secondary">cotistas</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Card 3 -->
+                                    <div class="col">
+                                        <div class="card border-0 border-bottom border-primary shadow-sm">
+                                            <div class="card-body text-center p-4 p-xxl-5">
+                                                <h3 class="display-3 mb-2">+750</h3>
+                                                <p class="fs-5 mb-0 text-secondary">ativos negociados</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Card 4 -->
+                                    <div class="col">
+                                        <div class="card border-0 border-bottom border-primary shadow-sm">
+                                            <div class="card-body text-center p-4 p-xxl-5">
+                                                <h3 class="display-3 mb-2">15</h3>
+                                                <p class="fs-5 mb-0 text-secondary">profissionais no time</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Card 5 -->
+                                    <div class="col">
+                                        <div class="card border-0 border-bottom border-primary shadow-sm">
+                                            <div class="card-body text-center p-4 p-xxl-5">
+                                                <h3 class="display-3 mb-2">+20</h3>
+                                                <p class="fs-5 mb-0 text-secondary">profissionais na Empiricus</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card border-0 shadow-sm bg-primary text-light">
+                                            <div class="card-body text-center p-4 p-xxl-5">
+                                                <h3 class="display-3 mb-2">6 anos</h3>
+                                                <p class="fs-5 mb-0">de História</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-darkblue py-3 py-md-5 py-xl-8">
+            <div class="container text-center">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/lDZ3CnixhFw" title="SOMOS A EMPIRICUS GESTÃO"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 text-center">
+                        <h2 class=" mb-4 fs-1">Nossos pilares</h2>
+                        <img src="../assets/img/pilares.svg" alt="Imagem dos Pilares" class="img-fluid mb-4">
+                        <p class="fw-bold mb-3">
+                            <u class="text-decoration-underline showModal">E você, como nosso convidado especial,
+                                receberá um presente exclusivo!</u>
+                        </p>
+                        <button class="btn btn-lg btn-cian mt-4 w-50" type="button">QUERO ME CADASTRAR</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5" style="background-color: #071C2C;">
+            <div class="container">
+                <div class="text-center text-lg-start" style="color: #b0b0b0;">
+                    <p>Contato: <a href="mailto:ri@empiricus.com.br" class="text-white">ri@empiricus.com.br</a></p>
+                    <p class="fw-bold">Visite nosso site: <a href="https://gestao.empiricus.com.br/" target="_blank"
+                            class="text-white">gestao.empiricus.com.br</a></p>
+                    <p>Nos acompanhe nas Redes Sociais:</p>
+                    <div class="d-flex justify-content-center justify-content-lg-start mb-4">
+                        <a href="https://www.youtube.com/@EmpiricusGestao" target="_blank" title="Youtube" class="me-3">
+                            <img class="icon-125"
+                                src="https://gestao.empiricus.com.br/app/themes/empinvestimentos/assets/icons-2/icon-youtube.svg"
+                                alt="YouTube">
+                        </a>
+                        <a href="https://www.instagram.com/empiricusgestao" target="_blank" title="Instagram"
+                            class="me-3">
+                            <img class="icon-125"
+                                src="https://gestao.empiricus.com.br/app/themes/empinvestimentos/assets/icons-2/icon-instagram.svg"
+                                alt="Instagram">
+                        </a>
+                        <a href="https://t.me/empiricusgestao" target="_blank" title="Telegram" class="me-3">
+                            <img class="icon-125"
+                                src="https://gestao.empiricus.com.br/app/themes/empinvestimentos/assets/icons-2/icon-telegram.svg"
+                                alt="Telegram">
+                        </a>
+                        <a href="https://whatsapp.com/channel/0029VagTlyS8PgsQFOKrKD1Y" target="_blank" title="Whatsapp"
+                            class="me-3">
+                            <img class="icon-125"
+                                src="https://gestao.empiricus.com.br/app/themes/empinvestimentos/assets/icons-2/icon-whatsapp.svg"
+                                alt="Whatsapp">
+                        </a>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <img src="https://lp1.empiricus.com.br/asset-day-ade02-a/images/logo1.svg" width="100"
+                            alt="Logo 1" class="img-fluid me-3">
+                        <img src="https://lp1.empiricus.com.br/asset-day-ade02-a/images/logo2.svg" width="100"
+                            alt="Logo 2" class="img-fluid me-3">
+                        <img src="https://lp1.empiricus.com.br/asset-day-ade02-a/images/logo3.svg" width="100"
+                            alt="Logo 3" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+    </main>
+
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <!-- Disclaimer -->
+            <div class="mb-4">
+                <p>Investimentos envolvem riscos e podem causar perdas ao investidor. Certifique-se dos riscos e se o investimento faz sentido para o seu perfil antes de investir. Não há garantia de retorno. Retornos passados não garantem retornos futuros.</p>
+            </div>
+    
+            <!-- Accordion -->
+            <div class="accordion" id="footerAccordion">
+                <!-- Accordion Item: Importante -->
+                <div class="accordion-item bg-dark border border-light">
+                    <h2 class="accordion-header" id="headingImportant">
+                        <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseImportant" aria-expanded="false" aria-controls="collapseImportant">
+                            <span class="me-2"><i class="iconImportante"></i></span> Importante
+                        </button>
+                    </h2>
+                    <div id="collapseImportant" class="accordion-collapse collapse" aria-labelledby="headingImportant" data-bs-parent="#footerAccordion">
+                        <div class="accordion-body text-white">
+                            Esse é um conteúdo oferecido por <strong><span data-rsparceiro=""></span></strong>, e acessado através da plataforma <strong>Empiricus</strong>, que não se responsabiliza pelo conteúdo oferecido pelo parceiro. A expertise do profissional em sua área de atuação não implica necessariamente o sucesso da estratégia veiculada na campanha, não devendo ser interpretada como uma promessa de retorno financeiro. O <strong>Empiricus Reserva e/ou World Class</strong> não abrangem o acesso a cursos que sejam oferecidos pela <strong>Empiricus</strong> em parceria com terceiros.
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Accordion Item: Sobre o Grupo Empiricus -->
+                <div class="accordion-item bg-dark border border-light">
+                    <h2 class="accordion-header" id="headingAbout">
+                        <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAbout" aria-expanded="false" aria-controls="collapseAbout">
+                            <span class="me-2"><i class="iconEmpiricus"></i></span> Sobre o Grupo Empiricus
+                        </button>
+                    </h2>
+                    <div id="collapseAbout" class="accordion-collapse collapse" aria-labelledby="headingAbout" data-bs-parent="#footerAccordion">
+                        <div class="accordion-body text-white">
+                            <strong>Grupo Empiricus</strong> é uma marca que inclui <strong>Empiricus Research</strong> (Empiricus Research Publicações S.A., CNPJ: 11.431.155/0001-07) e <strong>Empiricus Gestão de Recursos</strong> (Empiricus Gestão de Recursos Ltda., CNPJ: 06.195.084/0001-42), ambas empresas do grupo <strong>BTG Pactual</strong>, com funções de análise, consultoria e gestão, respectivamente. Todos os núcleos do <strong>Grupo Empiricus</strong> são devidamente autorizados e constituídos em conformidade com as autoridades regulatórias. Todas as regras de segregação entre as atividades são devidamente observadas pelas empresas da marca.
+                            <p>Todo o material está protegido pela Lei de Direitos Autorais e é de uso exclusivo de seu destinatário, sendo vedada a sua reprodução ou distribuição, seja no todo ou em parte, sem prévia e expressa autorização da <strong>Empiricus</strong>, sob pena de sanções nas esferas cível e criminal.</p>
+                            <p>Para maiores informações consulte nossa <a href="https://www.empiricus.com.br/politica-de-privacidade/" target="_blank" rel="noreferrer noopener" class="text-white">Política de Privacidade</a>, <a href="https://www.empiricus.com.br/disclosure/" target="_blank" rel="noreferrer noopener" class="text-white">Disclosure</a> e <a href="https://www.empiricus.com.br/termos-de-uso/" target="_blank" rel="noreferrer noopener" class="text-white">Termos de Uso</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Footer Bottom -->
+            <div class="text-center mt-4 mb-5">
+                <p>&copy; <span>2024</span> - Todos os direitos reservados.</p>
+
+                <p class="fs-2 fw-light text-secondary">Feito por: Rodrigo Vieira Pedro - Web Designer (<a href="https://digoo.dev.br" target="_blank" class="text-decoration-none">digoo.dev.br</a>)</p>
+            </div>
+        </div>
+    </footer>
+    
+    
+
+    <button id="scrollTopBtn" class="btn btn-primary" aria-label="Voltar para o Topo">↑</button>
+    <button id="subscribeBtn" class="btn btn-lg btn-cian">FAÇA AQUI SUA INSCRIÇÃO GRATUITA</button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const subscribeBtn = document.getElementById('subscribeBtn');
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > document.body.scrollHeight - window.innerHeight - 600) {
+                    subscribeBtn.style.display = 'block';
+                } else {
+                    subscribeBtn.style.display = 'none';
+                }
+            });
+
+            const scrollTopBtn = document.getElementById('scrollTopBtn');
+            scrollTopBtn.addEventListener('click', function () {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+    </script>
+
+
+
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navbar = document.getElementById('navbar');
+
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 100) { 
+                    navbar.classList.add('visible');
+                } else {
+                    navbar.classList.remove('visible');
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let tabs = document.querySelectorAll('.nav-link');
+            let interval = 5000;
+            let currentIndex = Array.from(tabs).findIndex(tab => tab.classList.contains('active'));
+
+
+            function activateProgressBar(tab) {
+                let progressBar = tab.querySelector('.progress-bar');
+                progressBar.style.transition = 'none';
+                progressBar.style.width = '0';
+                setTimeout(() => {
+                    progressBar.style.transition = 'width ' + (interval / 1000) + 's linear';
+                    progressBar.style.width = '100%';
+                }, 10);
+            }
+
+            function resetProgressBar(tab) {
+                let progressBar = tab.querySelector('.progress-bar');
+                progressBar.style.width = '0';
+                progressBar.style.transition = 'none';
+            }
+
+            function switchTab() {
+                let currentTab = tabs[currentIndex];
+                let nextIndex = (currentIndex + 1) % tabs.length;
+                let nextTab = tabs[nextIndex];
+
+
+                currentTab.classList.remove('active');
+                document.querySelector(currentTab.dataset.bsTarget).classList.remove('show', 'active');
+                resetProgressBar(currentTab);
+
+
+                nextTab.classList.add('active');
+                document.querySelector(nextTab.dataset.bsTarget).classList.add('show', 'active');
+                activateProgressBar(nextTab);
+
+                currentIndex = nextIndex;
+            }
+
+
+            let tabInterval = setInterval(switchTab, interval);
+            activateProgressBar(tabs[currentIndex]);
+
+
+            tabs.forEach((tab, index) => {
+                tab.addEventListener('click', function () {
+                    clearInterval(tabInterval);
+                    tabs.forEach(resetProgressBar);
+                    currentIndex = index;
+                    tabInterval = setInterval(switchTab, interval);
+                    activateProgressBar(tab);
+                });
+            });
+        });
+    </script>
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

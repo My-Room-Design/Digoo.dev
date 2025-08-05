@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+$primary-color: #2FA8E7;
+$secondary-color: #dbdbdb;
+$background-gradient: linear-gradient(90deg, rgba(4, 24, 34, 1) 35%, rgba(8, 46, 65, 1) 100%);
+$blur-radius: 6.3px;
+$bg-darkblue: #142838;
+$shadow-color: rgba(0, 0, 0, 0.1);
+
+@mixin font-setup($size, $weight: normal) {
+  font-family: "Poppins", sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+}
+
+@mixin button-style($bg-color, $hover-color, $text-color: #222) {
+  background: $bg-color;
+  color: $text-color;
+  border: none;
+
+  &:hover {
+    background: $hover-color;
+    color: $text-color;
+    border: none;
+  }
+}
+
+@mixin shadow-box($color: $shadow-color, $blur: $blur-radius) {
+  background: rgba(255, 255, 255, 0.062);
+  box-shadow: 0 4px 30px $color;
+  backdrop-filter: blur($blur);
+  -webkit-backdrop-filter: blur($blur);
+}
+
+@mixin gradient-bg($gradient) {
+  background: $gradient;
+}
+
+@mixin transition-fade($property: opacity, $duration: 200ms) {
+  transition: $property $duration ease-in-out;
+}
+
+#asset-day {
+  @include font-setup(0.9rem);
+  font-style: normal;
+
+  .topo {
+    @include gradient-bg($background-gradient);
+
+    .intro p {
+      color: $secondary-color;
+      @include font-setup(1.2rem, 300);
+    }
+  }
+}
+
+.titulo {
+  color: $primary-color;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.data {
+  background-color: $primary-color;
+}
+
+.linha-data {
+  border: 0.3rem solid $primary-color;
+  opacity: 1;
+  margin: 0 0 1rem 0;
+  padding: 0;
+}
+
+.horario {
+  font-size: medium;
+  font-weight: 600;
+  font-stretch: expanded !important;
+  white-space: nowrap;
+  display: block;
+}
+
+.nav-link {
+  color: $secondary-color !important;
+
+  &.active {
+    background-color: rgba($primary-color, 0.12);
+  }
+}
+
+.nav-pills .nav-link.active {
+  background-color: #2fa7e71e; // Cor de fundo para o link ativo em "nav-pills"
+}
+
+.text-description {
+  margin-top: 0.6rem;
+  @include font-setup(0.8rem, 200);
+  text-align: start;
+}
+
+.card-palestrante,
+.bg-lightblue {
+  @include shadow-box;
+  border: 1px solid $primary-color;
+  border-radius: 0.4rem;
+  color: $secondary-color;
+  padding: 0.3rem;
+}
+
+.tab-pane {
+  opacity: 0;
+  @include transition-fade;
+
+  &.active.show {
+    opacity: 1;
+  }
+}
+
+.progress {
+  background-color: rgba($primary-color, 0.06);
+  height: 5px;
+
+  .progress-bar {
+    width: 0;
+    height: 5px;
+    background-color: $primary-color;
+    transition: width 5s linear;
+    border-radius: 3rem;
+  }
+
+  .nav-link.active & {
+    width: 100%;
+  }
+}
+
+#agenda .card-title {
+  color: $primary-color;
+}
+
+.disclaimer {
+  width: 100%;
+  background-color: #000;
+  border-bottom: solid 1px #edd35b;
+  text-align: center;
+
+  &_content {
+    font-size: 14px;
+    font-weight: 200;
+    color: white;
+    padding-top: 1rem;
+  }
+}
+
+$anim-duration: 5; // in seconds
+$anim-speed: 0.65; // in seconds
+
+
+
+.btn-cian {
+  @include button-style(linear-gradient(45deg, #51f5e8 0%, #44b5ac 100%),
+    linear-gradient(45deg, #347a75 0%, #44b5ac 100%));
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 6;
+  top: -50px;
+  width: 100%;
+  height: 30px;
+  background-color: #000;
+  border-bottom: solid 1px #edd35b;
+  @include transition-fade(all, 0.2s);
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5);
+
+  .container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &.visible {
+    top: 0;
+  }
+}
+
+.navBar_logo {
+  display: block;
+  overflow: hidden;
+  width: 92px;
+  height: 24px;
+  background-image: url(https://gestao.empiricus.com.br/app/themes/gestao/resources/images/logo-gestao-marca.svg);
+  background-position: left top;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease;
+}
+
+@media (min-width: 992px) {
+  .navbar .container {
+    padding-left: 20px;
+    max-width: 1200px;
+  }
+}
+
+.titulo-texto {
+  margin-top: 2rem;
+
+  &::after {
+    margin-top: 0.7rem;
+    content: '';
+    display: block;
+    background-color: #000;
+    width: 100px;
+    height: 2px;
+  }
+}
+
+.bg-missao {
+  background-image: url(https://lp1.empiricus.com.br/asset-day-ade02-a/images/bg.svg);
+  background-size: cover;
+}
+
+.text-divider {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+  /* Espaçamento entre o texto e a linha */
+}
+
+.text-divider::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30%;
+  height: 2px;
+  background-color: $primary-color;
+  margin: 1rem 0 0  0;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-10px); // Move o card para cima
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); // Adiciona uma sombra maior
+  }
+}
+
+.bg-darkblue{
+  background-color: $bg-darkblue;
+}
+
+.bg-primary{
+  background-color: $primary-color !important;
+}
+
+.border-primary{
+  border-color: $primary-color !important;
+}
+
+#scrollTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none; /* Oculto por padrão */
+  z-index: 1000;
+}
+
+#subscribeBtn {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none; /* Oculto por padrão */
+  z-index: 1000;
+}
+
+
+// Estilo base para cards
+.card-base {
+  background-color: #fff; // Cor de fundo branca
+  border-radius: 0.8rem; // Bordas arredondadas
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Sombra leve
+  padding: 1rem; // Espaçamento interno
+  margin-bottom: 1.5rem; // Espaçamento abaixo
+}
+
+// Estilo para item-1
+.item-1 {
+  @extend .card-base;
+
+  h2.titulo-texto {
+    font-size: 1.5rem; // Tamanho da fonte para título
+    color: #333; // Cor do texto
+    margin-bottom: 1rem; // Espaçamento abaixo do título
+  }
+
+  p {
+    margin-bottom: 1rem; // Espaçamento abaixo dos parágrafos
+  }
+
+  ul {
+    margin-bottom: 1rem; // Espaçamento abaixo das listas
+    list-style: disc; // Tipo de marcador
+    padding-left: 1.5rem; // Espaçamento à esquerda dos marcadores
+  }
+
+  hr {
+    border: 1px solid #ddd; // Cor da linha horizontal
+    margin: 1.5rem 0; // Espaçamento acima e abaixo da linha
+  }
+}
+
+// Estilo para item-2
+.item-2 {
+  @extend .card-base;
+
+  h2.titulo-texto {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    margin-bottom: 1rem;
+    list-style: disc;
+    padding-left: 1.5rem;
+  }
+
+  hr {
+    border: 1px solid #ddd;
+    margin: 1.5rem 0;
+  }
+}
+
+// Estilo para item-3
+.item-3 {
+  @extend .card-base;
+
+  h2.titulo-texto {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    margin-bottom: 1rem;
+    list-style: disc;
+    padding-left: 1.5rem;
+  }
+
+  hr {
+    border: 1px solid #ddd;
+    margin: 1.5rem 0;
+  }
+}
+
+
+.accordion-item {
+  border: 1px solid #ccc; /* Ajuste a cor e espessura da borda conforme necessário */
+}
